@@ -1,7 +1,7 @@
-function acronymConverter (str) {
+function acronymConverter(str) {
     let newstr = str[0].toUpperCase();
-    for (let i = 1; i < str.length; i++){
-        if (str[i] === " ") newstr+=(str[i+1].toUpperCase());
+    for (let i = 1; i < str.length; i++) {
+        if (str[i] === " ") newstr += (str[i + 1].toUpperCase());
     }
     return newstr;
 }

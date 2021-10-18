@@ -15,5 +15,5 @@ const users = [
     },
 ];
 
-const filterByField = obj => users.filter( n => n.isAstronaut);
+const filterByField = obj => users.filter(n => n.isAstronaut);
 console.log(filterByField())

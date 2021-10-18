@@ -11,5 +11,5 @@ const users = [
     },
 ];
 //console.log(users.length)
-const avgCalculator = (obj) => (obj.reduce( (sum, el) => sum += el.age, 0))/obj.length;
+const avgCalculator = (obj) => (obj.reduce((sum, el) => sum += el.age, 0)) / obj.length;
 console.log(avgCalculator(users));
