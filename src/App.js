@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
 
 function App() {
+  const [board, setBoard] = useState(Array(9).fill(null));
+  const [value, setValue] = useState(board[0]);
+
+  const handleButtonClick = (index) => {
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="board">
+          {
+              board.map((value, index) => {
+                  return <button key={index} className="squareBtn" onClick={() => handleButtonClick(index)}>{value}</button>
+              })
+          }
+      </div>
     </div>
   );
 }
